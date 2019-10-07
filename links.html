@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
-         <title>Carlin's CSD120 Website</title>
-            <link rel="stylesheet" href="styles/main.css">
+    <title>Carlin's CSD120 Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        main #useful-links a {
+            color:#42B972;
+        }
+    </style>
+</head>
 <body>
     <header>
-           <nav>
-              <ul> 
-                 <li>   <a href="index.html">Home</a> </li>
-                 <li>   <a href="links.html">Links</a> </li>
-                 <li>   <a href="glossary.html">Glossary</a> </li>
-              </ul>
-            </nav>
-     </header>
-          <main> 
-                <section id="useful-links">
-          <h1>Useful Links </h1>
-          <ul>
-          <li> <a href = "https://validator.w3.org/nu/" target="_blank">HTML Validator</a>  </li>
-          <li> <a href= "https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a> </li>
-          <li> <a href="https://developer.mozilla.org/en-US/" target="_blank"> MDN</a> </li>
-          <li> <a href="https://caniuse.com/" target="_blank">Caniuse.com</a> </li>
+        <nav>
+          <ul> 
+             <li>   <a href="index.html">Home</a> </li>
+             <li>   <a href="links.html">Links</a> </li>
+             <li>   <a href="glossary.html">Glossary</a> </li>
           </ul>
-                </section>
-          </main>    
+        </nav>
+    </header>
+    <main> 
+        <section id="useful-links">
+            <h1>Useful Links </h1>
+            <ul>
+            <li> <a href = "https://validator.w3.org/nu/" target="_blank">HTML Validator</a>  </li>
+            <li> <a href= "https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a> </li>
+            <li> <a href="https://developer.mozilla.org/en-US/" target="_blank"> MDN</a> </li>
+            <li> <a href="https://caniuse.com/" target="_blank">Caniuse.com</a> </li>
+            </ul>
+        </section>
+    </main>    
     <footer> 
         <hr> 
             <blockquote>
@@ -32,9 +38,9 @@
                 Everything stays, But it still changes<br>
                 Ever so slighty, daily and nightly, in<br>
                 little ways, everything stays.<br>
-                <em>&mdash; <strong> Rebeeca Sugar</strong></em>
+                <span class="byline"><em>&mdash; <strong> Rebeeca Sugar</strong></em></span>
             </blockquote>
-            <p>&copy; 2019 <a href="mailto:carlin.linklater@student.saultcollege.ca?subject=Message%20from%20CSD120%20Website">Carlin Linklater<a>            
+            <p id="page-copyright">&copy; 2019 <a href="mailto:carlin.linklater@student.saultcollege.ca?subject=Message%20from%20CSD120%20Website">Carlin Linklater</a>            
     </footer>
 </body>
 </html>
