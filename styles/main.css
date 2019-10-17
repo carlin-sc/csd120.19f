@@ -1,31 +1,60 @@
 
 
-        body {background-color:#9ACEF4; 
-              font-family: 'Open Sans', sans-serif;
-              }
-              
-        h1 {color:#AA11B5;
-            font-family: 'Proza Libre', sans-serif;
-            background-image:url("../../images/gradient.png");
-            background-repeat: repeat-x;
-            }
-            
-        h2 {color:#3B3695; 
-            font-family: 'Proza Libre', sans-serif;
-            background-image:url("../../images/gradient.png");
-            background-repeat: repeat-x;
-            }
-            
-        a {color:#940D2D;
-           }
-           
-        nav a {color:#FF6F15;
-               }
-               
-        .byline{color:rgba(250,1,0,0.5)
-                }
-                
-        #page-copyright{color:#051777 ;
-                         }
-        main #useful-links a{color:#42B972;
-                                        }
+body {
+    background-color:#9ACEF4;   
+    font-family: 'Open Sans', sans-serif;
+}
+      
+h1 {
+    color:#AA11B5;
+    font-family: 'Proza Libre', sans-serif;
+    background-image:url("../images/gradient.png");
+    background-repeat: repeat-x;
+}
+    
+h2 {
+    color:#3B3695; 
+    font-family: 'Proza Libre', sans-serif;
+    background-image:url("../images/gradient.png");
+    background-repeat: repeat-x;
+}
+    
+a {
+    color:#940D2D;
+    text-decoration: none;
+}
+   
+nav a {
+    color:#FF6F15;
+}
+nav ul {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: circle;
+}
+       
+.byline{
+    color:rgba(250,1,0,0.5);
+    font-size: 70%;
+}
+        
+#page-copyright{
+    color:#051777 ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+main #useful-links a{
+    color:#42B972;
+}
+
+.bio p {
+    text-indent: 3em;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
