@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-            <title>Carlin's CSD120 Website</title>  
+    <title>Carlin's CSD120 Website</title>  
     <meta charset='utf-8'>
-      <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/main.css">
-            <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CProza+Libre&display=swap" rel="stylesheet">
  
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-                <link rel="manifest" href="/site.webmanifest">
-            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 <body>
-
+<div class='width-wrap'>
     <header>
            <nav>
               <ul> 
@@ -27,12 +27,12 @@
             </nav>
      </header>
           <main> 
-            <section> 
+            <section class="bio"> 
             <h1>Welcome to Carlin' CSD120 Website! </h1> 
-                <figure class="Mugshot">
-                    <img src="../images/Carlin-Sunset-Thumbnail.png"
-                         alt="Sunset">
-                        <figcaption>Dramatic Sunset</figcaption>
+                <figure class="mugshot">
+                    <!-- Your thumbnail and image filesizes are too large.  Thumbnails shouldn't be much more than 100KB and there's generally no need for full-size images to be more than 1MB -->
+                    <a href="images/Carlin%20Sunset%202.png"><img src="images/Carlin%20Sunset%20Thumbnail.png" alt="Sunset"></a>
+                    <figcaption>Dramatic Sunset</figcaption>
                 </figure>
                   <p> 
                      I am currently a student at Sault College! and I'm planning on finishing my two years of Computer Programming
@@ -58,16 +58,13 @@
          <section>
              <h2> Haiku </h2>
              <p >
-                <span class="byline">
                     <span style="color:#FFFFFF;background-color:#DF8EC4">
              Like crunchy cornflakes <br>
             Gold leaves rustle underfoot<br>
             Beauty in decay.<br>
                     </span>
-               </span>
-            <em>By: <strong>Paul Holmes</strong></em>
+            <span class="byline"><em>By: <strong>Paul Holmes</strong></em></span>
          </section>
-            <hr>
         </main>    
     <footer> 
         <hr> 
@@ -77,10 +74,11 @@
                    Everything stays, But it still changes<br>
                    Ever so slighty, daily and nightly, in<br>
                    little ways, everything stays.<br>
-                   <em>&mdash; <strong> Rebeeca Sugar</strong></em>
+                   <span class="byline"><em>&mdash; <strong> Rebeeca Sugar</strong></em></span>
                
             </blockquote>
            <p id="page-copyright">&copy; 2019 <a href="mailto:carlin.linklater@student.saultcollege.ca?subject=Message%20from%20CSD120%20Website">Carlin Linklater</a> </p>        
     </footer>
+</div>
 </body>
 </html>
