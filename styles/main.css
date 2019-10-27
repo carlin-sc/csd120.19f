@@ -59,37 +59,42 @@ main #useful-links a{
 footer {
     text-align: center;
     font-size: 12px;
-    margin: 0 0 0 3em;
+    margin: 0 0 3em 0;
 }
 
 .width-wrap {
     background-color: #7EAEE4;
-    border: 1px groove rgb(0,0,0,0.3);
-    width:1024px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-top: none;
+    max-width:1024px;
     padding: 0 2em;
-    margin: 0 0 0 3em;
+    margin: 0 0 3em 0;
     margin-left:auto;
     margin-right: auto;
-    border-top-color: rgb(0,0,0,1);
-    box-shadow: 4px 4px 4px rgb(0,0,0,0.3);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
 }
 
 .mugshot img {
-    box-shadow: 2px 2px 3px rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-h {
+h1, h2 {
     background: rgb(255,255,255,0);
-    -webkit-background-clip: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(35,174,210,1) 35%, rgba(51,0,235,1) 100%);
-    background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(35,174,210,1) 35%, rgba(51,0,235,1) 100%);
-    text-shadow: 1px 1px 1px rgb(0,0,0,0.2)
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(35,174,210,1) 35%, rgba(51,0,235,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2)
 }
 
 footer hr{
-    width: 50%; min-width: 300px;
+    width: 50vw;
+    min-width: 300px;
     margin: 3em 0 0 2em;
     border-top:3px solid #FF4031;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     border-bottom:8px dotted #FF4031;
+    border-left: none;
+    border-right: none;
 }
