@@ -112,6 +112,7 @@ footer hr{
 .mugshot {
     float:right;
     top: -1em;
+    position: relative;
 }
 .myfav{
     clear:right;
@@ -122,30 +123,37 @@ nav ul li{
 }
 
 nav {
-    padding: 8px 2em;
-    border: 0 0 1px 0 dotted rgb(0,0,0,0.3);
-    margin: -4px 0 0 0 
+    border-bottom: 1px dotted rgb(0,0,0,0.3);
+    margin: -4px 2em 0 2em;
+    overflow: auto;
 }
 
 header {
-    border: 4px 0 0 0 solid rgb(0,0,0,0.1);
+    border-top: 4px solid rgb(0,0,0,0.1);
     margin: 0 -2em;    
 }
 
-nav ul a:hover {
+nav ul a {
     padding:1em 0 0.5em 0;
     margin: 0 1em;
-    display:block;
-    border: 4px 0 0 0 solid;
-    border:4px solid rgba(255,255,255,0);
+    display:block;    
+    border-top: 4px solid rgba(255,255,255,0);
+}
+nav ul a:hover {
+    border-top: 4px solid rgba(255,255,255,1);
 }
 
 div .back-to-top {
     text-align: right;
     margin: 0 -0.5em 0 0 ;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 div .back-to-top:hover {
-    opacity:100%
+    opacity: 1;
+}
+
+.back-to-top a {
+    position: fixed;
+    bottom: 3.5em;
 }
