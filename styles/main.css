@@ -215,7 +215,7 @@ img {
         display:none;
     }
     .mugshot {
-        clear:right;
+        float: none;
         margin-left:0;
         margin-right:0;
     }
@@ -236,23 +236,24 @@ img {
     header nav ul a{
         border:0;
     }
-    header nav ul a :hover {
+    header nav ul a:hover {
+        border: 0;
         text-decoration:underline;
     }
     
-    .burger-icon,
-    .burger-icon::before,
-    .burger-icon::after {
+    .burger,
+    .burger::before,
+    .burger::after {
     width: 40px;
-    border-top: 4px solid black;
+    border-top: 5px solid black;
     }        
-    .burger-icon::before,        
-    .burger-icon::after {
+    .burger::before,        
+    .burger::after {
     content: "";
     display: block;  
     position: absolute;  
     }        
-    .burger-icon {
+    .burger {
     height: 25px;            
     cursor: pointer;        
     position: relative;
@@ -260,10 +261,10 @@ img {
     margin-right:auto;
     margin-top: 1em;
     }        
-    .burger-icon::before {
-    top: 4px; 
+    .burger::before {
+    top: 5px; 
     }        
-    .burger-icon::after {
-    top: 12px; 
+    .burger::after {
+    top: 15px; 
     }  
 }
