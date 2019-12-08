@@ -20,7 +20,7 @@
 <div class='width-wrap'>
     <header id="top">
            <nav>
-            <div class="burger-icon"></div>
+            <label class="burger"></label><input type="checkbox" id="burger-toggle">
               <ul> 
                  <li>   <a href="index.html">Home</a> </li>
                  <li>   <a href="links.html">Links</a> </li>
@@ -69,7 +69,63 @@
                     </span>
             <span class="byline"><em>By: <strong>Paul Holmes</strong></em></span>
          </section>
-         <section class="gallery">
+        <section>
+            <h2>My Sault College Courses</h2>
+            <table border="0" >
+            <tr>
+                <th>Term</th>
+                <th>Code</th>
+                <th>Course Name</th>
+            </tr>
+            <tr>
+                <td rowspan="6">Fall</td>
+            </tr>
+            <tr>
+                <td>CSD105</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>CSD120</td>
+                <td>Introduction to Web Development</td>
+            </tr>
+            <tr>
+                <td>CSO104</td>
+                <td>Introduction To Operating Systems and LAN</td>
+            </tr>
+            <tr>
+                <td>MTH122</td>
+                <td>Computer Mathematics</td>
+            </tr>
+            <tr>
+                <td>TNY130</td>
+                <td>Technology in Society</td>
+            </tr>
+            <tr>
+                <td rowspan="6">Winter</td>
+            </tr>
+            <tr>
+                <td>CSA103</td>
+                <td>Business Applications l</td>
+            </tr>
+             <tr>
+                <td>CSD102</td>
+                <td>Programming Using C++</td>
+            </tr>
+             <tr>
+                <td>CSD212</td>
+                <td>Web Scripting Languages</td>
+            </tr>
+             <tr>
+                <td>CSO102</td>
+                <td>Introduction To Linux</td>
+            </tr>
+             <tr>
+                <td>CST104</td>
+                <td>PC Hardware & Networking</td>
+            </tr>
+            </table>
+        </section>
+        <section class="gallery">
                 <h2>Photo Gallery</h2>
                 <div class="gallery-thumbnails">
                     <a class="row-span-2" href="https://picsum.photos/id/10/1024"><img src="https://picsum.photos/id/10/300/600" alt="Placeholder Image"></a>
@@ -89,6 +145,31 @@
                     <a href="https://picsum.photos/id/1064/1024"><img src="https://picsum.photos/id/1064/300" alt="Placeholder image"></a>
                     <a href="https://picsum.photos/id/1079/1024"><img src="https://picsum.photos/id/1079/300" alt="Placeholder image"></a>
                 </div>
+        </section>
+            <section class="survey">
+                <h2>Survey</h2>
+                <form   
+                action="https://formspree.io/xjvkplpr"
+                method="POST">
+                    <label>What is your name?<input type="text" name="name_field"></label>
+                    <label>What is your email?<input type="email" name="email_field"></label>
+                    <label>Which Integer Is best?<input type="number" name="best_integer"></label>
+                    <label>Which day is best?<input type="date" name="best_day"></label>
+                    <label>Which bear is best?<select type="select" name="best_bear">
+                        <option></option>
+                        <option>Black</option>
+                        <option>Brown</option>
+                        <option>Care Bear</option>
+                        <option>Polar</option>
+                        <option>Teddy</option>
+                    </select></label>
+                    <label>Do you like radio buttons?</label>
+                    <label><input type="radio" value="yes" name="radio">Yes</label>
+                    <label><input type="radio" value="no" name="radio">No</label>
+                    <label><input type="radio" value="?" checked name="radio">None of your business</label>
+                    <label>What is the meaning of life?<textarea name="life_meaning" rows="10" placeholder="Enter the correct answer here"></textarea></label>
+                    <button type="submit">SEND</button>
+                </form>
             </section>
         </main>    
     <footer> 

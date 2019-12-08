@@ -31,7 +31,7 @@ nav a {
 }
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 1em 0;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -126,8 +126,6 @@ footer hr{
     clear:right;
 }
 
-nav ul li{
-}
 
 nav {
     border-bottom: 1px dotted rgb(0,0,0,0.3);
@@ -215,7 +213,7 @@ img {
         display:none;
     }
     .mugshot {
-        clear:right;
+        float: none;
         margin-left:0;
         margin-right:0;
     }
@@ -236,23 +234,25 @@ img {
     header nav ul a{
         border:0;
     }
-    header nav ul a :hover {
+    header nav ul a:hover {
+        border: 0;
         text-decoration:underline;
     }
     
-    .burger-icon,
-    .burger-icon::before,
-    .burger-icon::after {
+    .burger,
+    .burger::before,
+    .burger::after {
     width: 40px;
-    border-top: 4px solid black;
+    border-top: 5px solid black;
     }        
-    .burger-icon::before,        
-    .burger-icon::after {
+    .burger::before,        
+    .burger::after {
     content: "";
     display: block;  
     position: absolute;  
+    opacity:0
     }        
-    .burger-icon {
+    .burger {
     height: 25px;            
     cursor: pointer;        
     position: relative;
@@ -260,10 +260,62 @@ img {
     margin-right:auto;
     margin-top: 1em;
     }        
-    .burger-icon::before {
-    top: 4px; 
+    .burger::before {
+    top: 5px; 
     }        
-    .burger-icon::after {
-    top: 12px; 
+    .burger::after {
+    top: 15px; 
     }  
+}
+tr {
+    background: rgb(0,0,0,0.05);
+    top:0.3em;
+    bottom:0.3em;
+    padding: 0 1em 0 1em;
+    border-left: 3px solid #7EAEE4;
+    border-right: 3px solid #7EAEE4;    
+}
+th {
+    background: rgb(0,0,0,0.1)
+}
+td:nth-of-type(odd) {
+    background: rgb(0,0,0,0.1);
+}
+td:nth-of-type(2) {
+    border-top:3px solid #7EAEE4;
+}
+td:nth-of-type(7) {
+    border-top:3px solid #7EAEE4;
+}
+.survey {
+    grid-column:span 2;
+}
+.survey form {
+    display: grid;
+    
+}
+.survey label {
+    margin-top:1em;
+    margin-bottom:0.5em;
+}
+.survey form-submit-button {
+    margin-top:1em;
+    justify-self: end;
+    font-size:24px;
+    padding:1em 2em;
+    color:white;
+    background-color:#8D7A97;
+}
+.burger{
+    display:block;
+}
+header nav ul {
+    height:0;
+    overflow:hidden;
+    height:auto;
+}
+.burger~#burger-toggle {
+    left:5px;
+    top:10px;
+    transform:rotate(45deg);
 }
