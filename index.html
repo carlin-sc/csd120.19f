@@ -16,11 +16,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="baguetteBox/baguetteBox.css">
+    <script src="baguetteBox/baguetteBox.js"></script>
 <body>
 <div class='width-wrap'>
     <header id="top">
            <nav>
-            <label class="burger"></label><input type="checkbox" id="burger-toggle">
+              <input type="checkbox" id="burger-toggle">
+              <label class="burger" for="burger-toggle"></label>
               <ul> 
                  <li>   <a href="index.html">Home</a> </li>
                  <li>   <a href="links.html">Links</a> </li>
@@ -78,9 +82,7 @@
                 <th>Course Name</th>
             </tr>
             <tr>
-                <td rowspan="6">Fall</td>
-            </tr>
-            <tr>
+                <th rowspan="5">Fall</th>
                 <td>CSD105</td>
                 <td>Python</td>
             </tr>
@@ -101,9 +103,7 @@
                 <td>Technology in Society</td>
             </tr>
             <tr>
-                <td rowspan="6">Winter</td>
-            </tr>
-            <tr>
+                <th rowspan="5">Winter</th>
                 <td>CSA103</td>
                 <td>Business Applications l</td>
             </tr>
@@ -151,23 +151,29 @@
                 <form   
                 action="https://formspree.io/xjvkplpr"
                 method="POST">
-                    <label>What is your name?<input type="text" name="name_field"></label>
-                    <label>What is your email?<input type="email" name="email_field"></label>
-                    <label>Which Integer Is best?<input type="number" name="best_integer"></label>
-                    <label>Which day is best?<input type="date" name="best_day"></label>
-                    <label>Which bear is best?<select type="select" name="best_bear">
+                    <label for="name_field">What is your name?</label>
+                    <input type="text" name="name_field" id="name_field" required>
+                    <label for="email_field">What is your email?</label>
+                    <input type="email" name="email_field" id="email_field" required>
+                    <label for="best_integer">Which Integer Is best?</label>
+                    <input type="number" name="best_integer" id="best_integer">
+                    <label for="best_day">Which day is best?</label>
+                    <input type="date" name="best_day" id="best_day">
+                    <label for="best_bear">Which bear is best?</label>
+                    <select type="select" name="best_bear" id="best_bear">
                         <option></option>
                         <option>Black</option>
                         <option>Brown</option>
                         <option>Care Bear</option>
                         <option>Polar</option>
                         <option>Teddy</option>
-                    </select></label>
+                    </select>
                     <label>Do you like radio buttons?</label>
-                    <label><input type="radio" value="yes" name="radio">Yes</label>
-                    <label><input type="radio" value="no" name="radio">No</label>
-                    <label><input type="radio" value="?" checked name="radio">None of your business</label>
-                    <label>What is the meaning of life?<textarea name="life_meaning" rows="10" placeholder="Enter the correct answer here"></textarea></label>
+                    <label><input type="radio" value="yes" name="radio" id="yes">Yes</label>
+                    <label><input type="radio" value="no" name="radio" id="no">No</label>
+                    <label><input type="radio" value="?" checked name="radio" id="?">None of your business</label>
+                    <label for="life_meaning">What is the meaning of life?</label>
+                    <textarea name="life_meaning" id="life_meaning" rows="10" placeholder="Enter the correct answer here"></textarea>
                     <button type="submit">SEND</button>
                 </form>
             </section>
@@ -192,5 +198,11 @@
     <a href="#top">◤</a>
  </div>
 </div>
+
+<script>
+  baguetteBox.run('.gallery-thumbnails', { 
+            filter: /picsum\.photos\/id/i 
+        });
+</script>
 </body>
 </html>
