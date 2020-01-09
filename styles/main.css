@@ -250,7 +250,6 @@ img {
     content: "";
     display: block;  
     position: absolute;  
-    opacity:0
     }        
     .burger {
     height: 25px;            
@@ -267,24 +266,25 @@ img {
     top: 15px; 
     }  
 }
-tr {
-    background: rgb(0,0,0,0.05);
-    top:0.3em;
-    bottom:0.3em;
-    padding: 0 1em 0 1em;
+table { border-collapse: collapse; }
+td, th {
+    padding: 0.3em 1em;
     border-left: 3px solid #7EAEE4;
     border-right: 3px solid #7EAEE4;    
 }
 th {
-    background: rgb(0,0,0,0.1)
+    background: rgba(0,0,0,0.1)
 }
-td:nth-of-type(odd) {
-    background: rgb(0,0,0,0.1);
+td {
+    background: rgba(0,0,0,0.05);
 }
-td:nth-of-type(2) {
+tr:nth-of-type(odd) td {
+    background: rgba(0,0,0,0.1);
+}
+tr:nth-of-type(2) {
     border-top:3px solid #7EAEE4;
 }
-td:nth-of-type(7) {
+tr:nth-of-type(7) {
     border-top:3px solid #7EAEE4;
 }
 .survey {
@@ -298,7 +298,7 @@ td:nth-of-type(7) {
     margin-top:1em;
     margin-bottom:0.5em;
 }
-.survey form-submit-button {
+.survey form [type="submit"] {
     margin-top:1em;
     justify-self: end;
     font-size:24px;
@@ -309,13 +309,38 @@ td:nth-of-type(7) {
 .burger{
     display:block;
 }
-header nav ul {
-    height:0;
-    overflow:hidden;
-    height:auto;
-}
-.burger~#burger-toggle {
-    left:5px;
-    top:10px;
-    transform:rotate(45deg);
+header nav input { display: none; }
+
+@media screen and ( max-width: 768px ) {
+    header nav ul {
+        height:0;
+        overflow:hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        transition: height 500ms ease-in-out;
+    }
+
+    header nav #burger-toggle:checked ~ ul {
+        height: 110px;  
+    }
+    #burger-toggle:checked ~ .burger {
+        transform:rotate(45deg) translate(-5px, 10px);
+    }
+
+    .burger,
+    .burger::before,
+    .burger::after {
+        transition: all 200ms ease-in-out;
+    }
+
+    #burger-toggle:checked ~ .burger::before {
+        opacity: 0;
+    }
+
+    #burger-toggle:checked ~ .burger::after {
+        transform: rotate(-90deg) translate(20px);
+    }
 }
